@@ -49,7 +49,7 @@ transformed parameters {
 }
 model {
 // Priors
-  tau ~ cauchy(0, 1);
+  tau ~ cauchy(0, 2);
   to_vector(stdnorm) ~ normal(0,1);
   L_Omega ~ lkj_corr_cholesky(1);
   to_vector(xi) ~ normal(0, 100);
